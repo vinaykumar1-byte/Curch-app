@@ -46,7 +46,7 @@ with col2:
 st.divider()
 
 # ---------------- MENU ----------------
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3, col4, col5, col6 = st.columns(6)
 
 with col1:
     if st.button("📝 DATA ENTRY "):
@@ -67,7 +67,9 @@ with col4:
 with col5:
     if st.button("✏ EDIT  DATA "):
         st.switch_page("pages/5_Edit_Data.py")
+with col6:
+    if st.button("📮 MAILING LABELS"):
+        st.switch_page("pages/6_Mailing_Labels.py")
+
 
 st.write("")
-st.write("")
-
